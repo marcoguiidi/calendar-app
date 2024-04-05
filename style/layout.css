@@ -99,8 +99,8 @@ dialog {
   
   width: fit-content; /* Fit the content's width */
   background-color: #fff; /* Match the calendar background color */
+  width: 75vw; /* Adjust the width */
 }
-
 /* Style for the form within the dialog to align with the calendar's content */
 dialog form {
   display: flex;
