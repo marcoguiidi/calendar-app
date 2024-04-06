@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {  // When the DOM is r
           const event = events.find(event => event.date === date);  // Select event based on the date
           
           if (event) { // If the event matchsomething
+            const root = document.documentElement;
             button.classList.add('has-event'); // Add the .has-event class
+            button.style.backgroundColor = event.color;
             button.addEventListener('click', function() {
               
                 document.getElementById('dialogEventTitle').innerHTML = event.description; // Set the title

@@ -3,30 +3,35 @@
       "date": "2024-03-05",
       "description": "Team Meeting",
       "location": "Aula II",
-      "participants": ["Wang", "Mohammed", "Lucia", "Marco"]
+      "participants": ["Wang", "Mohammed", "Lucia", "Marco"],
+      "color": "blue"
     },
     {
       "date": "2024-03-15",
       "description": "Web Development Workshop",
       "location": "Lab 3",
-      "participants": ["Sara", "Elena", "Ali", "Hua"]
+      "participants": ["Sara", "Elena", "Ali", "Hua"],
+      "color": "blue"
     },
     {
       "date": "2024-03-22",
       "description": "Project Presentation",
       "location": "Aula Magna",
-      "participants": ["Giulia", "Riccardo", "Simone", "Alessia"]
+      "participants": ["Giulia", "Riccardo", "Simone", "Alessia"],
+      "color": "green"
     },
     {
       "date": "2024-03-12",
       "description": "My birthday",
       "location": "My House",
-      "participants": ["Ilaria", "Luca", "Davide"]
+      "participants": ["Ilaria", "Luca", "Davide"],
+      "color": "red"
     },
     {
       "date": "2024-03-29",
       "description": "Final Project Evaluation",
       "location": "Aula Magna",
-      "participants": ["Wang", "Mohammed", "Lucia", "Marco"]
+      "participants": ["Wang", "Mohammed", "Lucia", "Marco"],
+      "color": "green"
     }
 ]

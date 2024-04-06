@@ -78,16 +78,16 @@ article {
 }
 
 .day button.has-event {
-  background-color: #e3f2fd; /* Lighter blue to indicate an event */
-  color: #333; /* Darker text for contrast */
+  color: white; /* Darker text for contrast */
   font-weight: bold; /* Make text bold to stand out */
+  /* opacity: 0.6; */
 }
 
 /* Style for when the button is hovered over */
 .day button.has-event:hover,
 .day button.has-event:focus {
-  background-color: #90caf9; /* A bit darker blue on hover/focus */
   color: #FFFFFF; /* White text for readability */
+  border: solid 1px white;
 }
 
 dialog {
@@ -97,7 +97,6 @@ dialog {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
   margin: auto; /* Center the dialog in the page */
   
-  width: fit-content; /* Fit the content's width */
   background-color: #fff; /* Match the calendar background color */
   width: 75vw; /* Adjust the width */
   max-height: 80vh;
@@ -110,7 +109,7 @@ dialog form {
 
 /* Style for the title in the dialog */
 dialog h2 {
-  color: #4A4A4A; /* Match the calendar text color */
+  color: red; /* Match the calendar text color */
   margin-top: 0; /* Reduce space above the title */
 }
 
@@ -122,8 +121,8 @@ dialog p, dialog ul {
 
 /* Style for the list of participants */
 dialog ul {
-  padding-left: 20px; /* Indent the list */
-}
+  padding-left: 20px; /*Indent the list */
+} 
 
 /* Style for the close button within the dialog */
 dialog button {
