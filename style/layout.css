@@ -32,12 +32,25 @@ article {
   width: 40%;
   margin: 1rem;
   padding: 5px;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1px;
+  grid-template-columns: repeat(7, calc(110% / 7));
+  gap: 0.5px;
+  width: 90%;
+}
+
+.calendar > div {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.calendar > div:not(:nth-last-child(-n+7)) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.278); /* Aggiunge un bordo inferiore alle celle tranne nell'ultima riga */
 }
 
 .month {
@@ -46,23 +59,41 @@ article {
 }
 
 .day {
-  padding: 1px;
-  text-align: center;
   color: red;
+  font-size: 80%;
 }
 
 .header {
-  color: red;
+  color: white !important;
+  background-color: red !important;
+  font-size: 80%;
 }
 
 .day button {
   border: 0;
-  width: 4.5ch;
+  width: fit-content;
   height: 4.5ch;
   border-radius: 20%;
   background-color: transparent;
   color: red;
-  font-size: 80%;
+  font-size: 90%;
+}
+
+@media  (min-width: 600px) {
+  .day {
+    color: red;
+    font-size: 100%;
+  }
+
+  .day button {
+    border: 0;
+    width: 4.5ch;
+    height: 4.5ch;
+    border-radius: 20%;
+    background-color: transparent;
+    color: red;
+    font-size: 100%;
+  }
 }
 
 .day button:hover,
@@ -95,7 +126,8 @@ dialog {
   margin: auto; /* Center the dialog in the page */
   
   background-color: #fff; /* Match the calendar background color */
-  width: 75vw; /* Adjust the width */
+  min-width: 15vw; /* Minimum width
+  max-width: 75vw; /* Adjust the width */
   max-height: 80vh;
 }
 /* Style for the form within the dialog to align with the calendar's content */
