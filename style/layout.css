@@ -68,26 +68,23 @@ article {
 .day button:hover,
 .day button:focus {
   outline: none;
-  background-color: red;
+  background-color: lightblue;
   color: #ffffff;
 }
 
 .day button:active {
-  background-color: red;
+  background-color: rgb(45, 144, 177);
   color: #ffffff;
 }
 
 .day button.has-event {
-  color: white; /* Darker text for contrast */
-  font-weight: bold; /* Make text bold to stand out */
-  /* opacity: 0.6; */
+  border: 2px dashed;
 }
 
 /* Style for when the button is hovered over */
 .day button.has-event:hover,
 .day button.has-event:focus {
   color: #FFFFFF; /* White text for readability */
-  border: solid 1px white;
 }
 
 dialog {

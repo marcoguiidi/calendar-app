@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {  // When the DOM is r
           if (event) { // If the event matchsomething
             const root = document.documentElement;
             button.classList.add('has-event'); // Add the .has-event class
-            button.style.backgroundColor = event.color;
+            button.style.borderColor = event.color; // Set the border color
             button.addEventListener('click', function() {
               
                 document.getElementById('dialogEventTitle').innerHTML = event.description; // Set the title
